@@ -6,22 +6,23 @@ public class DefenceManager : MonoBehaviour
 {
     [SerializeField] private InventoryTankObject _inventoryTankPrefab;
     [SerializeField] private Transform _inventoryParent;
+    [SerializeField] private Transform _spawnedTanksParent;
     public void InitDefenceManager(List<LevelObjectDefence> defenceTanks)
     {
         for (var i = 0; i < defenceTanks.Count; i++)
         {
-            var tankData = defenceTanks[i];
-            InventoryTankObject tank = Instantiate(_inventoryTankPrefab, _inventoryParent);
-            tank.Init(tankData.defenceTank, tankData.count);
-            tank.transform.position = new Vector3(-1 + i, 0, 0);
+            SetupTankInventory(defenceTanks, i);
         }
     }
-}
 
-public class InventoryTankObject : MonoBehaviour
-{
-    public void Init(DefenceTank tankDataDefenceTank, int tankDataCount)
+    private void SetupTankInventory(List<LevelObjectDefence> defenceTanks, int i)
     {
-        
+        var tankData = defenceTanks[i];
+        InventoryTankObject tankInventory = Instantiate(_inventoryTankPrefab, _inventoryParent);
+        tankInventory.name = _inventoryParent.name + i;
+        var tankObj = Instantiate(tankData.defenceTank, transform);
+        tankObj.name = tankData.defenceTank.name;
+        tankInventory.Init(tankObj,_spawnedTanksParent, tankData.count);
+        tankInventory.transform.localPosition = new Vector3(-1.25f + i * 1.25f, 0, 0);
     }
 }

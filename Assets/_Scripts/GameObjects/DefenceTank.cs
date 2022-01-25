@@ -2,5 +2,11 @@ using UnityEngine;
 
 public class DefenceTank : MonoBehaviour
 {
-    public EnemyTankSpecs enemyTankSpecs;
+    public DefenceTankSpecs defenceTankSpecs;
+    private bool _isActive;
+
+    public void Activate()
+    {
+        _isActive = true;
+    }
 }
