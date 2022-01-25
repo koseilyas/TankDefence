@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextureAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: eea07af718a614dd59cc166b22473e1d, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: f1912ed035b564266a3cade6ed86e55b, type: 3}
+  - {fileID: 21300000, guid: 16c265817e156488d91f39ae52f42975, type: 3}
+  - {fileID: 21300000, guid: aa31ef1394c8f43d6a3f995a8d245571, type: 3}
+  - {fileID: 21300000, guid: 043a48d341fe94a0996cd670c8212e12, type: 3}
+  - {fileID: 21300000, guid: 491c04f524a7140ce9c1076a0cc85044, type: 3}
+  - {fileID: 21300000, guid: c58aa3863126340b59f735b6aef0ce94, type: 3}
+  - {fileID: 21300000, guid: fc412c67824234b7595bd922d66ba08e, type: 3}
+  - {fileID: 21300000, guid: fc4926f82ad304c42b620c9569333e16, type: 3}
+  - {fileID: 21300000, guid: ea2c02598b1364e059131fabc2df9043, type: 3}
+  - {fileID: 21300000, guid: dfc1c60ad6b3948a7ab4e69d87043d33, type: 3}
+  - {fileID: 21300000, guid: 9b1bf81a27fba4fea99a22d8a1dec8c2, type: 3}
+  - {fileID: 21300000, guid: f1aeab7ab8f6242729c6830158816a48, type: 3}
+  - {fileID: 21300000, guid: b23c8ffae75f0424983892fbb29dec7f, type: 3}
+  - {fileID: 21300000, guid: 11858cfc6e433406aa1cf2b752b5b035, type: 3}
+  - {fileID: 21300000, guid: 82b3099d8708849f0897a9869e5c3b9a, type: 3}
+  - {fileID: 21300000, guid: b93a597ec83ea454893800715beb20a2, type: 3}
+  - {fileID: 21300000, guid: 9cb4899e1e51043f5826d68b200ba877, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - enemy_tank_red_3
+  - bulletDark3_outline
+  - explosion5
+  - defence_tank_turret_green_1
+  - defence_tank_turret_dark_3
+  - defence_tank_body_dark_3
+  - explosion1
+  - tileGrass1
+  - enemy_tank_blue_1
+  - enemy_tank_black_2
+  - defence_tank_body_green_1
+  - explosion3
+  - explosion2
+  - tileSand1
+  - defence_tank_turret_red_2
+  - defence_tank_body_red_2
+  - explosion4
+  m_RenderDataMap: {}
+  m_Tag: TextureAtlas
+  m_IsVariant: 0
