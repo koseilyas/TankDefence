@@ -1,12 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GridContainer : MonoBehaviour
 {
-    [SerializeField] private GridTile[] _tiles;
     [SerializeField] private GridTile _rightTopTileToPut, _leftBottomTileToPut;
+    public GridTile[] tiles;
     public float leftMost, rightMost, upMost, downMost;
     public static GridContainer Instance;
 
@@ -30,7 +27,7 @@ public class GridContainer : MonoBehaviour
 
     public GridTile GetTileAtPos(Vector3 position)
     {
-        foreach (var tile in _tiles)
+        foreach (var tile in tiles)
         {
             Vector3 tilePos = tile.transform.position;
             if (Mathf.Abs(position.x - tilePos.x) < 0.1f && Mathf.Abs(position.y - tilePos.y) < 0.1f)

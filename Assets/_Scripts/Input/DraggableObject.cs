@@ -6,7 +6,6 @@ public class DraggableObject : MonoBehaviour
     private Camera _cam;
     private bool _canDrag = true;
     private float elapsingTime = 0.3f;
-    public static event Action<float,float> OnObjectPut;
     private DefenceTank _draggingTank; 
 
     void Awake() {

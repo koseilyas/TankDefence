@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class InventoryTankObject : MonoBehaviour
 {
-    [SerializeField] private TMP_Text _tankCountText;
     private int _tankCount;
     private Transform _spawnedParent;
+    [SerializeField] private TMP_Text _tankCountText;
     
     public void Init(DefenceTank defenceTank,Transform spawnedParent, int tankDataCount)
     {
@@ -14,7 +14,7 @@ public class InventoryTankObject : MonoBehaviour
         UpdateTankCountText();
         SetPosition(defenceTank);
         CloneOnClick cloneOnClick = defenceTank.gameObject.AddComponent<CloneOnClick>();
-        cloneOnClick.Initialize(defenceTank.gameObject,_spawnedParent);
+        cloneOnClick.Initialize(defenceTank.gameObject,_spawnedParent,this);
     }
 
     private void SetPosition(DefenceTank tankDataDefenceTank)
@@ -28,5 +28,15 @@ public class InventoryTankObject : MonoBehaviour
     void UpdateTankCountText()
     {
         _tankCountText.SetText($"x{_tankCount}");
+    }
+    
+    public void TankSpawned()
+    {
+        _tankCount--;
+        UpdateTankCountText();
+        if (_tankCount == 0)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

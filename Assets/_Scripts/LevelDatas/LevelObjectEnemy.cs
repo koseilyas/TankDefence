@@ -4,5 +4,5 @@ using System;
 public class LevelObjectEnemy
 {
     public int count;
-    public EnemyTank defenceTank;
+    public EnemyTank enemyTank;
 }

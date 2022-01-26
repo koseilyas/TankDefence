@@ -21,8 +21,8 @@ MonoBehaviour:
     defenceTank: {fileID: -1493654145280716762, guid: 0a94ee1492f6941b5b20947c94af67a1, type: 3}
   enemyTanks:
   - count: 7
-    defenceTank: {fileID: 7846921832041031398, guid: 1fbbbaf25a4a54ba49473243f6205a90, type: 3}
+    enemyTank: {fileID: 7846921832041031398, guid: 1fbbbaf25a4a54ba49473243f6205a90, type: 3}
   - count: 3
-    defenceTank: {fileID: -1556357664579969277, guid: 03e53e65d0c4b4743b8671e106519ab5, type: 3}
+    enemyTank: {fileID: -1556357664579969277, guid: 03e53e65d0c4b4743b8671e106519ab5, type: 3}
   - count: 5
-    defenceTank: {fileID: -8651371427384468357, guid: 4168b17f6bf994bf596f8f93051a2e10, type: 3}
+    enemyTank: {fileID: -8651371427384468357, guid: 4168b17f6bf994bf596f8f93051a2e10, type: 3}

@@ -191,6 +191,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defenceTankSpecs: {fileID: 11400000, guid: b54d41f3b053545329841c2af512c17b, type: 2}
+  tankIndex: 0
+  _bullet: {fileID: 3841736552589278099, guid: 430251ceb62134749a7d693b538db632, type: 3}
+  _collider: {fileID: 7192197986081855663}
 --- !u!61 &7192197986081855663
 BoxCollider2D:
   m_ObjectHideFlags: 0
